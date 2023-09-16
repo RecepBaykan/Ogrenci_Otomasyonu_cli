@@ -223,7 +223,7 @@ public class VTSistemi {
 					
 					silStat.executeUpdate();
 					
-					silStat.clearBatch();
+					silStat.close();
 					res.close();
 					connection.close();
 					
